@@ -77,4 +77,26 @@ describe('gerarEdicao', () => {
     ).rejects.toThrow(/Nenhuma notícia/)
     rmSync(dir, { recursive: true, force: true })
   })
+
+  it('avisa quando uma fonte retorna zero notícias', async () => {
+    const dir = dirTemp()
+    const avisos = []
+    const warnOriginal = console.warn
+    console.warn = (msg) => avisos.push(msg)
+    const xmlVazio = '<?xml version="1.0"?><rss version="2.0"><channel><title>F</title></channel></rss>'
+    const fetchFn = async (url) => {
+      const s = String(url)
+      if (s.startsWith('https://a.com')) return new Response(xmlVazio, { status: 200 })
+      return respostaLlm()
+    }
+    try {
+      await expect(
+        gerarEdicao({ fontes: [fonteOk], config, fetchFn, agora: new Date('2026-08-20T14:00:00Z'), dirSaida: dir })
+      ).rejects.toThrow(/Nenhuma notícia/)
+      expect(avisos.some((a) => a.includes('retornou 0 notícias'))).toBe(true)
+    } finally {
+      console.warn = warnOriginal
+      rmSync(dir, { recursive: true, force: true })
+    }
+  })
 })

@@ -22,6 +22,9 @@ export async function gerarEdicao({ fontes, config, fetchFn = fetch, agora = new
   for (const fonte of fontes.filter((f) => f.ativo)) {
     try {
       const itens = await coletar(fonte, fetchFn)
+      if (itens.length === 0) {
+        console.warn(`[aviso] fonte "${fonte.nome}" retornou 0 notícias (seletores não casam ou feed vazio)`)
+      }
       colecao.push({ fonte, itens })
     } catch (erro) {
       console.warn(`[aviso] fonte "${fonte.nome}" falhou: ${erro.message}`)
