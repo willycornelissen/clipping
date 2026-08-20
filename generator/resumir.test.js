@@ -39,6 +39,25 @@ describe('resumirNoticia', () => {
     await expect(resumirNoticia(noticia, config, fetchFn)).rejects.toThrow(/LLM_API_KEY/)
     expect(fetchFn).toHaveBeenCalledTimes(1)
   })
+
+  it('tenta de novo quando a chamada lança exceção de rede e usa a 2ª tentativa', async () => {
+    const fetchFn = vi
+      .fn()
+      .mockRejectedValueOnce(new Error('network down'))
+      .mockResolvedValueOnce(respostaLlm('Resumo da segunda tentativa.'))
+    const resumo = await resumirNoticia(noticia, config, fetchFn)
+    expect(fetchFn).toHaveBeenCalledTimes(2)
+    expect(resumo).toBe('Resumo da segunda tentativa.')
+  })
+
+  it('usa fallback quando as duas tentativas lançam exceção', async () => {
+    const fetchFn = vi.fn(async () => {
+      throw new Error('network down')
+    })
+    const resumo = await resumirNoticia(noticia, config, fetchFn)
+    expect(fetchFn).toHaveBeenCalledTimes(2)
+    expect(resumo).toBe('Conteúdo da notícia.')
+  })
 })
 
 describe('resumir', () => {
