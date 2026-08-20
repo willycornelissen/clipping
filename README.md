@@ -4,7 +4,7 @@ Jornal digital estático: edições com resumos (gerados por LLM) das últimas
 notícias de fontes cadastradas. Site público no GitHub Pages; edições geradas
 sob demanda pelo administrador via GitHub Actions.
 
-- Site: `https://<usuario>.github.io/clipping/`
+- Site: `https://clipping.willy.dev.br/`
 - Spec: `docs/superpowers/specs/2026-08-20-jornal-noticias-design.md`
 
 ## Manual do administrador
@@ -79,9 +79,10 @@ aviso). Se nenhuma notícia for coletada, o workflow falha e nada é publicado.
 
 **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-O `base` do Vite e o `public/404.html` já apontam para `/clipping/` (nome deste
-repositório). Se mudar o nome do repositório ou usar domínio próprio, ajuste
-ambos para o caminho correspondente.
+O site é servido na raiz do domínio próprio (`clipping.willy.dev.br`), então o
+`base` do Vite é `/` e o `public/404.html` redireciona para `/`. Se trocar o
+domínio ou voltar a publicar por caminho (ex.: `github.io/<repo>`), ajuste ambos
+para o caminho correspondente.
 
 ## Checklist da primeira edição
 
