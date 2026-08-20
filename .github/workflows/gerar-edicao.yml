@@ -9,6 +9,7 @@ permissions:
 jobs:
   gerar:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -27,3 +28,10 @@ jobs:
           git add data/editions
           git diff --cached --quiet || git commit -m "chore: nova edição $(date -u +%F)"
           git push
+  deploy:
+    needs: gerar
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
