@@ -1,1 +1,16 @@
-/* estilos do site (Task 10) */
+:root { --tinta: #1a1a1a; --cinza: #666; --linha: #e5e5e5; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; color: var(--tinta); background: #fdfdfc; }
+.container { max-width: 720px; margin: 0 auto; padding: 0 1rem 2rem; }
+header.site { border-bottom: 2px solid var(--tinta); margin: 1rem 0 1.5rem; padding-bottom: 1rem; display: flex; justify-content: space-between; align-items: baseline; }
+header.site h1 { font-size: 1.75rem; margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; letter-spacing: -0.5px; }
+header.site a { color: var(--tinta); text-decoration: none; }
+header.site nav a { font-family: Arial, sans-serif; font-size: 0.85rem; text-decoration: underline; }
+.data-edicao { font-family: Arial, sans-serif; font-size: 0.85rem; color: var(--cinza); margin-bottom: 1.5rem; }
+h2.fonte { font-family: Arial, sans-serif; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--cinza); border-bottom: 1px solid var(--linha); padding-bottom: 0.3rem; margin-top: 2rem; }
+article.noticia { padding: 1rem 0; border-bottom: 1px solid var(--linha); }
+article.noticia h3 { margin: 0 0 0.4rem; font-size: 1.15rem; line-height: 1.3; }
+article.noticia h3 a { color: var(--tinta); text-decoration: none; }
+article.noticia h3 a:hover { text-decoration: underline; }
+article.noticia p.resumo { margin: 0 0 0.4rem; line-height: 1.55; }
+.meta { font-family: Arial, sans-serif; font-size: 0.78rem; color: var(--cinza); margin: 0; }

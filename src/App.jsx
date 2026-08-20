@@ -1,3 +1,26 @@
+import { Link, Route, Routes } from 'react-router-dom'
+import { RestaurarRota } from './components/RestaurarRota.jsx'
+import { PaginaEdicaoAtual } from './pages/PaginaEdicaoAtual.jsx'
+import { PaginaEdicao } from './pages/PaginaEdicao.jsx'
+import { PaginaArquivo } from './pages/PaginaArquivo.jsx'
+
 export default function App() {
-  return <h1>Belmont</h1>
+  return (
+    <div className="container">
+      <header className="site">
+        <h1>
+          <Link to="/">Belmont</Link>
+        </h1>
+        <nav>
+          <Link to="/arquivo">Arquivo</Link>
+        </nav>
+      </header>
+      <RestaurarRota />
+      <Routes>
+        <Route path="/" element={<PaginaEdicaoAtual />} />
+        <Route path="/arquivo" element={<PaginaArquivo />} />
+        <Route path="/edicao/:id" element={<PaginaEdicao />} />
+      </Routes>
+    </div>
+  )
 }
