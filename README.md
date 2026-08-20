@@ -65,6 +65,8 @@ resumos, commita a edição e o site é republicado automaticamente.
 
 Rodar de novo no mesmo dia **sobrescreve** a edição daquele dia.
 
+O site pode levar alguns minutos para refletir a nova edição (cache do CDN do Pages).
+
 Se uma fonte estiver fora do ar, a edição é gerada sem ela (o log mostra um
 aviso). Se nenhuma notícia for coletada, o workflow falha e nada é publicado.
 
@@ -75,6 +77,15 @@ aviso). Se nenhuma notícia for coletada, o workflow falha e nada é publicado.
 Se o repositório não se chamar `belmont` (ou usar domínio próprio), ajuste o
 `base` em `vite.config.js` e a URL no `public/404.html` para o caminho
 correspondente.
+
+## Checklist da primeira edição
+
+1. Configurar LLM (Secrets/Variables — seção acima)
+2. Habilitar Pages (Source: GitHub Actions)
+3. Actions → "Gerar Edição" → Run workflow → acompanhar até o commit automático
+4. Conferir que o job `deploy` do mesmo run concluiu e o site mostra a edição na home
+5. Testar um deep link (ex.: `/edicao/<data>` recarregando a página) e o arquivo
+6. Se algo falhar: ler o log do workflow — fontes puladas aparecem como `[aviso]`
 
 ## Desenvolvimento
 
