@@ -1,0 +1,7 @@
+sources:
+  - id: g1
+    nome: G1
+    tipo: rss
+    url: https://g1.globo.com/rss/g1/
+    max_noticias: 5
+    ativo: true
