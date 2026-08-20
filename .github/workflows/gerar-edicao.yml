@@ -1,0 +1,29 @@
+name: Gerar Edição
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: node generator/gerar.js
+        env:
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+      - name: Commit da edição
+        run: |
+          git config user.name "belmont-bot"
+          git config user.email "actions@github.com"
+          git add data/editions
+          git diff --cached --quiet || git commit -m "chore: nova edição $(date -u +%F)"
+          git push
