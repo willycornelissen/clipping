@@ -9,9 +9,10 @@ export default function App() {
     <div className="container">
       <header className="site">
         <h1>
-          <Link to="/">Belmont</Link>
+          <Link to="/">Diário da Capital</Link>
         </h1>
-        <nav>
+        <nav aria-label="Navegação principal">
+          <Link to="/">Início</Link>
           <Link to="/arquivo">Arquivo</Link>
         </nav>
       </header>
