@@ -16,6 +16,11 @@ describe('carregarIndice', () => {
     vi.stubGlobal('fetch', vi.fn(async () => new Response('nf', { status: 404 })))
     expect(await carregarIndice()).toBeNull()
   })
+
+  it('retorna null quando o JSON da resposta é inválido', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => new Response('não é json', { status: 200 })))
+    expect(await carregarIndice()).toBeNull()
+  })
 })
 
 describe('carregarEdicao', () => {
