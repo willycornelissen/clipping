@@ -57,6 +57,11 @@ No repositório: **Settings → Secrets and variables → Actions**.
 Qualquer API compatível com o esquema OpenAI funciona: OpenAI, OpenRouter,
 DeepSeek, Groq, Ollama (endpoint público) etc.
 
+Para o **Gemini do Google**, use o endpoint compatível com OpenAI:
+`LLM_BASE_URL` = `https://generativelanguage.googleapis.com/v1beta/openai`
+(não se esqueça do `/openai`) e `LLM_MODEL` com o nome do modelo (sem o prefixo
+`google/`, se a API rejeitar).
+
 ### 3. Gerar uma nova edição
 
 Aba **Actions** → workflow **"Gerar Edição"** → botão **Run workflow** →
