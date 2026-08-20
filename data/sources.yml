@@ -1,7 +1,14 @@
 sources:
-  - id: revista-oeste
+  - id: oeste
     nome: Revista Oeste
     tipo: rss
-    url: https://revistaoeste.com/feed/](https://revistaoeste.com/feed/
+    url: https://revistaoeste.com/feed/
     max_noticias: 5
     ativo: true
+  - id: gazeta-do-povo
+    nome: Gazeta do Povo
+    tipo: rss
+    url: https://www.gazetadopovo.com.br/feed/rss/brasil.xml
+    max_noticias: 5
+    ativo: true
+  
