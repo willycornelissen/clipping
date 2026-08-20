@@ -4,7 +4,7 @@ Jornal digital estático: edições com resumos (gerados por LLM) das últimas
 notícias de fontes cadastradas. Site público no GitHub Pages; edições geradas
 sob demanda pelo administrador via GitHub Actions.
 
-- Site: `https://<usuario>.github.io/belmont/`
+- Site: `https://<usuario>.github.io/clipping/`
 - Spec: `docs/superpowers/specs/2026-08-20-jornal-noticias-design.md`
 
 ## Manual do administrador
@@ -74,9 +74,9 @@ aviso). Se nenhuma notícia for coletada, o workflow falha e nada é publicado.
 
 **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
-Se o repositório não se chamar `belmont` (ou usar domínio próprio), ajuste o
-`base` em `vite.config.js` e a URL no `public/404.html` para o caminho
-correspondente.
+O `base` do Vite e o `public/404.html` já apontam para `/clipping/` (nome deste
+repositório). Se mudar o nome do repositório ou usar domínio próprio, ajuste
+ambos para o caminho correspondente.
 
 ## Checklist da primeira edição
 

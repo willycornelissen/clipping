@@ -19,13 +19,13 @@ describe('formatarData', () => {
 
 describe('caminhoRelativo', () => {
   it('remove o prefixo do base path', () => {
-    expect(caminhoRelativo('/belmont/arquivo?pagina=2', '/belmont/')).toBe('/arquivo?pagina=2')
+    expect(caminhoRelativo('/clipping/arquivo?pagina=2', '/clipping/')).toBe('/arquivo?pagina=2')
   })
   it('mantém caminho quando não há prefixo', () => {
     expect(caminhoRelativo('/arquivo', '/')).toBe('/arquivo')
   })
   it('raiz volta para /', () => {
     expect(caminhoRelativo('/', '/')).toBe('/')
-    expect(caminhoRelativo('/belmont/', '/belmont/')).toBe('/')
+    expect(caminhoRelativo('/clipping/', '/clipping/')).toBe('/')
   })
 })
