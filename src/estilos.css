@@ -14,3 +14,7 @@ article.noticia h3 a { color: var(--tinta); text-decoration: none; }
 article.noticia h3 a:hover { text-decoration: underline; }
 article.noticia p.resumo { margin: 0 0 0.4rem; line-height: 1.55; }
 .meta { font-family: Arial, sans-serif; font-size: 0.78rem; color: var(--cinza); margin: 0; }
+ul.lista-edicoes { list-style: none; padding: 0; }
+ul.lista-edicoes li { padding: 0.6rem 0; border-bottom: 1px solid var(--linha); }
+ul.lista-edicoes a { color: var(--tinta); }
+.paginacao { display: flex; gap: 1.5rem; justify-content: center; margin: 2rem 0; font-family: Arial, sans-serif; font-size: 0.9rem; }
