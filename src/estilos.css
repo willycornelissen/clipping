@@ -87,81 +87,44 @@ header.site nav a:hover {
   border-bottom-color: var(--acento);
 }
 
-/* Menu de fontes */
-.fontes-menu {
+/* Filtro de fontes */
+.fontes-filtro {
   display: flex;
-  gap: 1.5rem;
-  position: relative;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--linha);
 }
 
-.fonte-item {
-  position: relative;
-}
-
-.fonte-toggle {
+.fonte-btn {
   background: none;
-  border: none;
-  padding: 0.25rem 0.5rem;
-  font: inherit;
-  color: var(--tinta);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
-  border-bottom: 2px solid transparent;
-  transition: border-color 180ms ease, color 180ms ease;
-}
-
-.fonte-toggle:hover,
-.fonte-toggle.aberto {
-  color: var(--tinta);
-  border-bottom-color: var(--acento);
-}
-
-.fonte-toggle .seta {
-  font-size: 0.6rem;
-  transition: transform 180ms ease;
-}
-
-.fonte-toggle.aberto .seta {
-  transform: rotate(180deg);
-}
-
-.categorias-dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin: 0.5rem 0 0;
-  padding: 0.5rem 0;
-  list-style: none;
-  background: var(--card);
   border: 1px solid var(--linha);
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  min-width: 180px;
-  z-index: 10;
-  animation: fadeIn 150ms ease;
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--cinza);
+  cursor: pointer;
+  transition: all 180ms ease;
+  white-space: nowrap;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.categoria-link {
-  display: block;
-  padding: 0.5rem 1rem;
+.fonte-btn:hover {
+  border-color: var(--acento);
   color: var(--tinta);
-  text-decoration: none;
-  font-family: var(--fonte-corpo);
-  font-size: 0.9rem;
-  text-transform: none;
-  letter-spacing: normal;
 }
 
-.categoria-link:hover {
-  background: var(--fundo);
-  color: var(--acento);
+.fonte-btn.ativa {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: #fff;
+}
+
+.fonte-btn:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 2px;
 }
 
 @media (max-width: 600px) {
@@ -169,25 +132,13 @@ header.site nav a:hover {
     flex-direction: column;
     gap: 1rem;
   }
-  .fontes-menu {
-    flex-direction: column;
-    gap: 0.5rem;
+  .fontes-filtro {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--linha);
+    padding-top: 1rem;
     width: 100%;
-  }
-  .fonte-item {
-    width: 100%;
-  }
-  .categorias-dropdown {
-    position: static;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    padding: 0;
-    margin: 0.25rem 0 0 1rem;
-  }
-  .categoria-link {
-    padding: 0.35rem 0;
-    font-size: 0.85rem;
   }
 }
 
@@ -201,6 +152,28 @@ header.site nav a:hover {
   margin: 0 0 1.25rem;
 }
 
+.fonte-filtro-ativa {
+  font-family: var(--fonte-rotulo);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--cinza);
+  margin: 0.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--linha);
+}
+
+.fonte-filtro-ativa strong {
+  color: var(--tinta);
+}
+
+.sem-noticias {
+  color: var(--cinza);
+  font-style: italic;
+  text-align: center;
+  padding: 2rem;
+}
+
 h2.fonte {
   font-family: var(--fonte-rotulo);
   font-size: 0.8rem;
@@ -211,22 +184,6 @@ h2.fonte {
   border-bottom: 1px solid var(--linha);
   padding-bottom: 0.3rem;
   margin: 2rem 0 0.75rem;
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.categoria-badge {
-  font-family: var(--fonte-corpo);
-  font-size: 0.75rem;
-  font-weight: 400;
-  text-transform: none;
-  letter-spacing: normal;
-  color: var(--acento);
-  background: var(--fundo);
-  padding: 0.1rem 0.5rem;
-  border-radius: 999px;
 }
 
 /* Notícias em cards */

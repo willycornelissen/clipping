@@ -1,68 +1,78 @@
-import { useState, useEffect } from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { useState, useEffect, createContext, useContext } from 'react'
+import { Link, Route, Routes, useSearchParams } from 'react-router-dom'
 import { RestaurarRota } from './components/RestaurarRota.jsx'
 import { PaginaEdicaoAtual } from './pages/PaginaEdicaoAtual.jsx'
 import { PaginaEdicao } from './pages/PaginaEdicao.jsx'
 import { PaginaArquivo } from './pages/PaginaArquivo.jsx'
-import { carregarFontes, agruparPorFonteECategoria } from './fontes.js'
+import { carregarFontes } from './fontes.js'
+
+const FonteFiltroContext = createContext({ fonteSelecionada: null, setFonteSelecionada: () => {} })
+
+export function useFonteFiltro() {
+  return useContext(FonteFiltroContext)
+}
 
 export default function App() {
   const [fontes, setFontes] = useState([])
-  const [fontesAgrupadas, setFontesAgrupadas] = useState({})
-  const [menuAberto, setMenuAberto] = useState(null)
+  const [searchParams, setSearchParams] = useSearchParams()
+  const fonteSelecionada = searchParams.get('fonte')
 
   useEffect(() => {
-    carregarFontes().then((f) => {
-      setFontes(f)
-      setFontesAgrupadas(agruparPorFonteECategoria(f))
-    })
+    carregarFontes().then(setFontes)
   }, [])
 
+  const definirFonte = (fonteId) => {
+    const params = new URLSearchParams(searchParams)
+    if (fonteId) {
+      params.set('fonte', fonteId)
+    } else {
+      params.delete('fonte')
+    }
+    setSearchParams(params)
+  }
+
+  const nomesFontes = fontes.map((f) => ({ id: f.id, nome: f.nome }))
+
   return (
-    <div className="container">
-      <header className="site">
-        <h1>
-          <Link to="/">Diário da Capital</Link>
-        </h1>
-        <nav aria-label="Navegação principal">
-          <Link to="/">Início</Link>
-          <Link to="/arquivo">Arquivo</Link>
-          {Object.keys(fontesAgrupadas).length > 0 && (
-            <div className="fontes-menu">
-              {Object.entries(fontesAgrupadas).map(([fonte, categorias]) => (
-                <div key={fonte} className="fonte-item">
+    <FonteFiltroContext.Provider value={{ fonteSelecionada, setFonteSelecionada: definirFonte }}>
+      <div className="container">
+        <header className="site">
+          <h1>
+            <Link to="/">Diário da Capital</Link>
+          </h1>
+          <nav aria-label="Navegação principal">
+            <Link to="/">Início</Link>
+            <Link to="/arquivo">Arquivo</Link>
+            {nomesFontes.length > 0 && (
+              <div className="fontes-filtro" role="group" aria-label="Filtrar por fonte">
+                <button
+                  className={`fonte-btn ${!fonteSelecionada ? 'ativa' : ''}`}
+                  onClick={() => definirFonte(null)}
+                  aria-pressed={!fonteSelecionada}
+                >
+                  Todas
+                </button>
+                {nomesFontes.map(({ id, nome }) => (
                   <button
-                    className={`fonte-toggle ${menuAberto === fonte ? 'aberto' : ''}`}
-                    onClick={() => setMenuAberto(menuAberto === fonte ? null : fonte)}
-                    aria-expanded={menuAberto === fonte}
-                    aria-haspopup="true"
+                    key={id}
+                    className={`fonte-btn ${fonteSelecionada === id ? 'ativa' : ''}`}
+                    onClick={() => definirFonte(id)}
+                    aria-pressed={fonteSelecionada === id}
                   >
-                    {fonte}
-                    <span className="seta" aria-hidden="true">▾</span>
+                    {nome}
                   </button>
-                  {menuAberto === fonte && (
-                    <ul className="categorias-dropdown" role="menu">
-                      {categorias.map((cat) => (
-                        <li key={cat} role="none">
-                          <Link to="/" role="menuitem" className="categoria-link">
-                            {cat}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
-        </nav>
-      </header>
-      <RestaurarRota />
-      <Routes>
-        <Route path="/" element={<PaginaEdicaoAtual />} />
-        <Route path="/arquivo" element={<PaginaArquivo />} />
-        <Route path="/edicao/:id" element={<PaginaEdicao />} />
-      </Routes>
-    </div>
+                ))}
+              </div>
+            )}
+          </nav>
+        </header>
+        <RestaurarRota />
+        <Routes>
+          <Route path="/" element={<PaginaEdicaoAtual />} />
+          <Route path="/arquivo" element={<PaginaArquivo />} />
+          <Route path="/edicao/:id" element={<PaginaEdicao />} />
+        </Routes>
+      </div>
+    </FonteFiltroContext.Provider>
   )
 }

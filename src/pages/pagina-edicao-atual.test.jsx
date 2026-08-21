@@ -21,7 +21,7 @@ describe('PaginaEdicaoAtual', () => {
     expect(await screen.findByText('Ainda não há edições publicadas.')).toBeInTheDocument()
   })
 
-  it('carrega e exibe a edição mais recente agrupada por fonte', async () => {
+  it('carrega e exibe a edição mais recente agrupada por categoria', async () => {
     const indice = { edicoes: [{ id: '2026-08-20', data: '2026-08-20', fontes: 1, noticias: 1 }] }
     const edicao = {
       id: '2026-08-20',
@@ -31,11 +31,12 @@ describe('PaginaEdicaoAtual', () => {
     vi.stubGlobal('fetch', vi.fn(async (url) => {
       const s = String(url)
       if (s.includes('index.json')) return new Response(JSON.stringify(indice), { status: 200 })
+      if (s.includes('sources.yml')) return new Response('sources: []', { status: 200 })
       return new Response(JSON.stringify(edicao), { status: 200 })
     }))
     renderizar()
     expect(await screen.findByText('T1')).toBeInTheDocument()
-    expect(screen.getByText('G1', { selector: 'h2' })).toBeInTheDocument()
+    expect(screen.getByText('Geral', { selector: 'h2' })).toBeInTheDocument()
     expect(screen.getByText(/20\/08\/2026/)).toBeInTheDocument()
   })
 })
