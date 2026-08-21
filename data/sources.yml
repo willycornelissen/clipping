@@ -1,8 +1,14 @@
 sources:
-  - id: oeste
-    nome: Revista Oeste
+  - id: google-news-brasil
+    nome: Google News Brasil
     tipo: rss
-    url: https://revistaoeste.com/feed/
+    url: https://news.google.com/rss/search?q=Brasil&hl=pt-BR&gl=BR&ceid=BR:pt-419
+    max_noticias: 5
+    ativo: true
+  - id: jovem-pan
+    nome: Jovem Pan
+    tipo: rss
+    url: https://jovempan.com.br/feed/
     max_noticias: 5
     ativo: true
   - id: gazeta-do-povo
