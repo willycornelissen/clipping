@@ -2,15 +2,16 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { EdicaoView } from '../components/EdicaoView.jsx'
 import { carregarEdicao } from '../api.js'
+import { carregarFontes } from '../fontes.js'
 
 export function PaginaEdicao() {
   const { id } = useParams()
-  const [estado, setEstado] = useState({ carregando: true, edicao: null })
+  const [estado, setEstado] = useState({ carregando: true, edicao: null, fontes: [] })
 
   useEffect(() => {
     let ativo = true
-    carregarEdicao(id).then((edicao) => {
-      if (ativo) setEstado({ carregando: false, edicao })
+    Promise.all([carregarEdicao(id), carregarFontes()]).then(([edicao, fontes]) => {
+      if (ativo) setEstado({ carregando: false, edicao, fontes })
     })
     return () => {
       ativo = false
@@ -25,5 +26,5 @@ export function PaginaEdicao() {
       </p>
     )
   }
-  return <EdicaoView edicao={estado.edicao} />
+  return <EdicaoView edicao={estado.edicao} fontes={estado.fontes} />
 }
