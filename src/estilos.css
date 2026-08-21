@@ -174,16 +174,37 @@ header.site nav a:hover {
   padding: 2rem;
 }
 
-h2.fonte {
-  font-family: var(--fonte-rotulo);
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--cinza);
-  border-bottom: 1px solid var(--linha);
-  padding-bottom: 0.3rem;
+/* Grade de notícias */
+.grade-noticias {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.categoria-section {
+  grid-column: 1 / -1;
+}
+
+.categoria-section h2.fonte {
   margin: 2rem 0 0.75rem;
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .noticias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .noticias-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* Notícias em cards */
@@ -193,13 +214,14 @@ article.noticia {
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   padding: 1rem 1.25rem;
-  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
 }
 
 article.noticia h3 {
   margin: 0 0 0.4rem;
   font-family: var(--fonte-titulo);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -207,7 +229,7 @@ article.noticia h3 {
 article.noticia h3 a { color: var(--tinta); text-decoration: none; }
 article.noticia h3 a:hover { color: var(--acento); }
 
-article.noticia p.resumo { margin: 0 0 0.5rem; line-height: 1.6; }
+article.noticia p.resumo { margin: 0 0 0.5rem; line-height: 1.6; flex: 1; }
 
 .meta {
   font-family: var(--fonte-rotulo);

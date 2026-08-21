@@ -35,16 +35,18 @@ export function EdicaoView({ edicao, fontes = [] }) {
       {grupos.length === 0 ? (
         <p className="sem-noticias">Nenhuma notícia para esta fonte.</p>
       ) : (
-        grupos.map(([categoria, noticias]) => (
-          <section key={categoria}>
-            <h2 className="fonte">
-              {categoria}
-            </h2>
-            {noticias.map((n, i) => (
-              <Noticia key={`${n.url}-${i}`} noticia={n} />
-            ))}
-          </section>
-        ))
+        <div className="grade-noticias">
+          {grupos.map(([categoria, noticias]) => (
+            <section key={categoria} className="categoria-section">
+              <h2 className="fonte">{categoria}</h2>
+              <div className="noticias-grid">
+                {noticias.map((n, i) => (
+                  <Noticia key={`${n.url}-${i}`} noticia={n} />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       )}
     </div>
   )
