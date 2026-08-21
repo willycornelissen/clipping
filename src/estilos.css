@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 760px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem 3rem;
 }
@@ -204,6 +204,12 @@ header.site nav a:hover {
 @media (min-width: 900px) {
   .noticias-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1300px) {
+  .noticias-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
