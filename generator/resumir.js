@@ -3,13 +3,22 @@ const PROMPT_SISTEMA =
 
 export class ErroAutenticacaoLlm extends Error {}
 
+const MAX_CONTEUDO_LLM = 3000
+const MAX_FALLBACK = 500
+
+function truncar(texto, max) {
+  if (texto.length <= max) return texto
+  return texto.slice(0, max).trim() + '…'
+}
+
 export async function resumirNoticia(noticia, config, fetchFn = fetch) {
   const url = `${config.baseUrl.replace(/\/$/, '')}/chat/completions`
+  const conteudoTruncado = truncar(noticia.conteudo, MAX_CONTEUDO_LLM)
   const corpo = {
     model: config.model,
     messages: [
       { role: 'system', content: PROMPT_SISTEMA },
-      { role: 'user', content: `Título: ${noticia.titulo}\n\n${noticia.conteudo}` }
+      { role: 'user', content: `Título: ${noticia.titulo}\n\n${conteudoTruncado}` }
     ]
   }
   for (let tentativa = 1; tentativa <= 2; tentativa++) {
@@ -32,7 +41,7 @@ export async function resumirNoticia(noticia, config, fetchFn = fetch) {
       if (erro instanceof ErroAutenticacaoLlm) throw erro
     }
   }
-  return noticia.conteudo || noticia.titulo
+  return truncar(noticia.conteudo || noticia.titulo, MAX_FALLBACK)
 }
 
 export async function resumir(noticias, config, fetchFn = fetch) {

@@ -10,6 +10,11 @@ const noticia = {
   fonte: 'A'
 }
 
+const noticiaLonga = {
+  ...noticia,
+  conteudo: 'A'.repeat(600)
+}
+
 const respostaLlm = (texto) =>
   new Response(JSON.stringify({ choices: [{ message: { content: texto } }] }), { status: 200 })
 
@@ -32,6 +37,13 @@ describe('resumirNoticia', () => {
     const resumo = await resumirNoticia(noticia, config, fetchFn)
     expect(fetchFn).toHaveBeenCalledTimes(2)
     expect(resumo).toBe('Conteúdo da notícia.')
+  })
+
+  it('trunca fallback quando conteúdo excede limite', async () => {
+    const fetchFn = vi.fn(async () => new Response('erro', { status: 500 }))
+    const resumo = await resumirNoticia(noticiaLonga, config, fetchFn)
+    expect(resumo.length).toBeLessThanOrEqual(501) // 500 + '…'
+    expect(resumo).toContain('…')
   })
 
   it('lança erro explícito em 401 sem retry', async () => {
