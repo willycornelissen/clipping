@@ -1,5 +1,5 @@
 const PROMPT_SISTEMA =
-  'Você é um editor de notícias. Resuma a notícia a seguir em 2 a 3 frases, em português, com tom jornalístico neutro. Responda apenas com o resumo, sem títulos, preâmbulos ou comentários.'
+  'Você é um editor de notícias. Resuma a notícia a seguir em no máximo dois parágrafos, em português, com tom jornalístico neutro. Responda apenas com o resumo, sem títulos, preâmbulos ou comentários.'
 
 export class ErroAutenticacaoLlm extends Error {}
 
