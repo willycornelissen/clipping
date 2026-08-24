@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 export function PaginaSobre() {
   return (
-    <div>
+    <article className="noticia">
       <h2 className="fonte">Sobre</h2>
       <p>
         A Cidade da Residência, habitualmente tratada como a Capital do país onde
@@ -29,6 +29,6 @@ export function PaginaSobre() {
           </dd>
         </div>
       </dl>
-    </div>
+    </article>
   )
 }
