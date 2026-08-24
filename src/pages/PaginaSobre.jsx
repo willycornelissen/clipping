@@ -15,14 +15,14 @@ export function PaginaSobre() {
       </p>
       <dl>
         <div>
-          <dt>Diário de Castália</dt>
+          <dt><a href="www.castalia.net.br" target="_blank" rel="noopener noreferrer">Diário de Castália</a></dt>
           <dd>
             Representa a Vita Contemplativa — o espírito, a atemporalidade, a ordem
             abstrata e a torre de marfim.
           </dd>
         </div>
         <div>
-          <dt>Diário da Capital</dt>
+          <dt><a href="clipping.willy.dev.br" target="_blank" rel="noopener noreferrer">Diário da Capital</a></dt>
           <dd>
             Representa a Vita Activa — a matéria, a história, o conflito moral, a
             família e a responsabilidade cívica no mundo real.
