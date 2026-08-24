@@ -4,6 +4,7 @@ import { RestaurarRota } from './components/RestaurarRota.jsx'
 import { PaginaEdicaoAtual } from './pages/PaginaEdicaoAtual.jsx'
 import { PaginaEdicao } from './pages/PaginaEdicao.jsx'
 import { PaginaArquivo } from './pages/PaginaArquivo.jsx'
+import { PaginaSobre } from './pages/PaginaSobre.jsx'
 import { carregarFontes } from './fontes.js'
 
 const FonteFiltroContext = createContext({ fonteSelecionada: null, setFonteSelecionada: () => {} })
@@ -42,6 +43,7 @@ export default function App() {
           </h1>
           <nav aria-label="Navegação principal">
             <Link to="/">Início</Link>
+            <Link to="/sobre">Sobre</Link>
             <Link to="/arquivo">Arquivo</Link>
             {nomesFontes.length > 0 && (
               <div className="fontes-filtro" role="group" aria-label="Filtrar por fonte">
@@ -69,6 +71,7 @@ export default function App() {
         <RestaurarRota />
         <Routes>
           <Route path="/" element={<PaginaEdicaoAtual />} />
+          <Route path="/sobre" element={<PaginaSobre />} />
           <Route path="/arquivo" element={<PaginaArquivo />} />
           <Route path="/edicao/:id" element={<PaginaEdicao />} />
         </Routes>
