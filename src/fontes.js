@@ -14,7 +14,7 @@ let fontesCache = null
 export async function carregarFontes() {
   if (fontesCache) return fontesCache
   try {
-    const resp = await fetch(`${base}data/sources.yml`)
+    const resp = await fetch(`${base}data/sources.yml`, { cache: 'no-store' })
     if (!resp.ok) return []
     const yaml = await import('yaml')
     const dados = yaml.parse(await resp.text())

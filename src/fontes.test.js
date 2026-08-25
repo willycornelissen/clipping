@@ -1,5 +1,16 @@
-import { describe, it, expect } from 'vitest'
-import { ASSUNTOS, obterAssuntoDaNoticia } from './fontes.js'
+import { describe, it, expect, vi, afterEach } from 'vitest'
+import { ASSUNTOS, obterAssuntoDaNoticia, carregarFontes } from './fontes.js'
+
+afterEach(() => vi.unstubAllGlobals())
+
+describe('carregarFontes', () => {
+  it('busca sources.yml sem cache HTTP', async () => {
+    const fetchMock = vi.fn(async () => new Response('sources: []', { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    await carregarFontes()
+    expect(fetchMock).toHaveBeenCalledWith(expect.stringContaining('sources.yml'), expect.objectContaining({ cache: 'no-store' }))
+  })
+})
 
 describe('ASSUNTOS', () => {
   it('contém os seis assuntos na ordem canônica', () => {

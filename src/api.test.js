@@ -4,6 +4,13 @@ import { carregarIndice, carregarEdicao } from './api.js'
 afterEach(() => vi.unstubAllGlobals())
 
 describe('carregarIndice', () => {
+  it('busca sem cache HTTP', async () => {
+    const fetchMock = vi.fn(async () => new Response(JSON.stringify({ edicoes: [] }), { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    await carregarIndice()
+    expect(fetchMock).toHaveBeenCalledWith(expect.any(String), expect.objectContaining({ cache: 'no-store' }))
+  })
+
   it('retorna o índice parseado', async () => {
     vi.stubGlobal('fetch', vi.fn(async () =>
       new Response(JSON.stringify({ edicoes: [{ id: '2026-08-20', data: '2026-08-20', fontes: 1, noticias: 2 }] }), { status: 200 })

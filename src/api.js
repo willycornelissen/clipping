@@ -2,7 +2,7 @@ export const base = import.meta.env.BASE_URL
 
 export async function carregarIndice() {
   try {
-    const resp = await fetch(`${base}data/editions/index.json`)
+    const resp = await fetch(`${base}data/editions/index.json`, { cache: 'no-store' })
     if (!resp.ok) return null
     return await resp.json()
   } catch {
@@ -12,7 +12,7 @@ export async function carregarIndice() {
 
 export async function carregarEdicao(id) {
   try {
-    const resp = await fetch(`${base}data/editions/${id}.json`)
+    const resp = await fetch(`${base}data/editions/${id}.json`, { cache: 'no-store' })
     if (!resp.ok) return null
     return await resp.json()
   } catch {
