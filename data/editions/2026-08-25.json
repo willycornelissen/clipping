@@ -1,7 +1,63 @@
 {
   "id": "2026-08-25",
-  "gerada_em": "2026-08-25T12:58:32.914Z",
+  "gerada_em": "2026-08-25T13:19:28.434Z",
   "noticias": [
+    {
+      "titulo": "Em 1968, um encontro do Rei Pelé com a rainha Elizabeth coroou um dia de gala no Maracanã",
+      "fonte": "Jovem Pan",
+      "url": "https://jovempan.com.br/colunistas/thiago-uberreich/em-1968-um-encontro-do-rei-pele-com-a-rainha-elizabeth-coroou-um-dia-de-gala-no-maracana/",
+      "publicada_em": "2026-08-25T13:16:36.000Z",
+      "resumo": "Ouça os gols do jogo com a narração de Waldir Amaral"
+    },
+    {
+      "titulo": "SP começa semana com tempo frio, mas tendência é de temperatura subir; veja previsão",
+      "fonte": "Jovem Pan",
+      "url": "https://jovempan.com.br/brasil/sp-comeca-semana-com-tempo-frio-mas-tendencia-e-de-temperatura-subir-veja-previsao/",
+      "publicada_em": "2026-08-25T13:15:33.000Z",
+      "resumo": "De acordo com a Climatempo, o sol na capital paulista deve voltar a aparecer na quinta-feira (27); mudança começa pelo interior paulista e avança para a maior cidade do país"
+    },
+    {
+      "titulo": "Conexão HTLV reúne ciência, ativismo e gestão pública em Salvador para articular respostas ao vírus - Mídia NINJA",
+      "fonte": "Google News Ciência",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQX1Y5bzdSN0xpRDdjV0V0NmF6Z1Z1ekctamlJSDNxNXhpbnhJY0IyMXNGVUU4TGdaR3dIYWp0OE5fWWlLdjRMYUtTQ2c3UXEyYjg2a2ZQS3k5bDJ5ZnNqbWRZaW56V3pIMWh5YnlrUXcyN2haQnl0ZGlWTVlCakJRQjRSWFB6SXZSeFVIY1BLVG9LeTBuTW1DM3VqOFAyRDBFcFJvaUNaMGJZQ2xpYzNMTTl3amdjMWs5UTR2TXE2RQ?oc=5",
+      "publicada_em": "2026-08-25T13:11:48.000Z",
+      "resumo": "Conexão HTLV reúne ciência, ativismo e gestão pública em Salvador para articular respostas ao vírus  Mídia NINJA"
+    },
+    {
+      "titulo": "JAC fecha lojas no Brasil e muda estratégia para tentar voltar a crescer - VEJA",
+      "fonte": "Google News Brasil",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTEUzRTlLbkp1VnI5cjhLMzJ4QW0ydm9zem10Ri1TcGtsSm1uY0tZSDNTaVBoUVl5MDFLNEhsQmFfd2ppN25kSXZsb216c1RHMjRMeGhRUkx6VmNlR1VWXzM1RWJKTC04QU1xZjlpVFBOTVNIQmFIWkgydmFLalJPVDlJd2VpTW1iVWNoM1ZuUkZvOTRjNi0wcFY1OXN5X3lBUndFN1FhU0RYSzcx?oc=5",
+      "publicada_em": "2026-08-25T13:09:34.000Z",
+      "resumo": "JAC fecha lojas no Brasil e muda estratégia para tentar voltar a crescer  VEJA"
+    },
+    {
+      "titulo": "Papa Leão XIV nomeia líder dos Cavaleiros de Colombo para dicastério do Vaticano",
+      "fonte": "Gazeta do Povo - Mundo",
+      "url": "https://www.gazetadopovo.com.br/mundo/papa-leao-xiv-nomeia-lider-dos-cavaleiros-de-colombo-para-dicasterio-do-vaticano/",
+      "publicada_em": "2026-08-25T13:06:46.000Z",
+      "resumo": "Papa Leão XIV nomeou Patrick Kelly, cavaleiro supremo dos Cavaleiros de Colombo, como membro do Dicastério para os Leigos, a Família e a Vida do Vaticano."
+    },
+    {
+      "titulo": "Lula cria compras expressas com ranking automático e sem edital por compra",
+      "fonte": "Gazeta do Povo - Economia",
+      "url": "https://www.gazetadopovo.com.br/economia/lula-cria-compras-expressas-com-ranking-automatico-e-sem-edital-por-compra/",
+      "publicada_em": "2026-08-25T13:03:40.000Z",
+      "resumo": "Decreto regulamenta marketplace para intermediar relação entre fornecedores e administração pública federal. Leia na Gazeta do Povo."
+    },
+    {
+      "titulo": "Evento discute o papel do Rio como hub estratégico de energia e inovação; assista ao vivo - O GLOBO",
+      "fonte": "Google News Economia",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQYzZIYlYzZVZ3X0lKMFJUeUlGWnE3WEFWbzdEbkJqYzFNckpXa3MxazhMY2VTby1uckhtYWI0NUlFc3laVzF5Q29iWVViR1I4X202SVdWT0pQbWFzVXBBWGFsZ0haNkQ5UTMzM3hvdUNuQ1dKb2NNckNaWUVXVnFDdkNLODVRcTNJaHVTajlKeGFSb3NUeGxvam9GUS05aWh4dFA3VnNfMGsxRkVOREZMSE04MGIwc2FkeE1wY1hJWnJGbE5tNE5PQXNGa9IB2gFBVV95cUxNWUdEMXh3NzVuTlh4R0t3dGRCOWVBSWYyWEZtSGZmNzZHRWJDUjBhTWRQZGRqcUY2TVAzcmptTG9odG1UdmxBTTVpcVdfSjh2M3ZfU2lpdEJyRmtDbjNtVHV5U2NxWFgzck5hSVJwYS1kNmVhUko3anMzcXNIRHBTSjlrelpjcnpwajhpY3doanlCdGp6ZmdmbTFadFJYZDNGSDZFWExucVgtSTdoUDRWZVlUWko0Vi1CQmtaMUM1UDdzbGtqdUxyUUhIaTRmbVRLWVVaMGZwWWVkZw?oc=5",
+      "publicada_em": "2026-08-25T12:53:18.000Z",
+      "resumo": "Evento discute o papel do Rio como hub estratégico de energia e inovação; assista ao vivo  O GLOBO"
+    },
+    {
+      "titulo": "Eclipse lunar parcial poderá ser visto em todo o Brasil entre quinta e sexta-feira; saiba como acompanhar - GZH",
+      "fonte": "Google News Brasil",
+      "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxORjc0aDV5cHE2Tm9OR3dVanNRdkpCbkFXc09UMGk0b0ZEMDQ5OTcwbjZVMzYtQWM5TTNfbFI4bzAxUG9mTzFPUHI1SFk5aWZsdnFhXzdiODNGNVVvRG1FRG5reU1QY093OGhQLVZMbDl4ODBnZEFkZ2V4UTJrR3libEIxWkEzRndMXzFyYTJKM3B5TFpuY3dPTmMzdEJ5WjVnOE5RTzNvOFEtcURqQkV1U0VvYWs3eU42YkltQlhzM09qekwtX081a3JCZjN6QW5ROU9mQ01QSTk1QW9za3J1dHo0U19uMkhCYU5vRlR3eWZMT3p5cmc3SkVNcHRPd3NvVmE1SWZCVDJpNjhiZkxIeUlXSzE0NzdJ?oc=5",
+      "publicada_em": "2026-08-25T12:52:34.000Z",
+      "resumo": "Eclipse lunar parcial poderá ser visto em todo o Brasil entre quinta e sexta-feira; saiba como acompanhar  GZH"
+    },
     {
       "titulo": "Creatina faz mal ao rim? O exame que assusta e quase ninguém entende",
       "fonte": "Jovem Pan",
@@ -80,13 +136,6 @@
       "resumo": "Apple deve atualizar produto que ficou \"abandonado\" por dois anos  Exame"
     },
     {
-      "titulo": "ANPD multa TikTok em mais de R$ 150 milhões por falhas na proteção de dados de adolescentes - Estadão",
-      "fonte": "Google News Brasil",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQSkh3X2pQT1E5b3Fsb3k3VXpLTWIwTTk3THNsbDlkMGNPZ211Y3Vsb1RwWDRiZXRuRWx4U1puSi14SkxldWFjeFZrMVo5cllYSXdyRndTSGRwZ0M1UmFOZTlYWEtsZURONHBHWnZNYi0tZDRzQkl0ZGZoWXJQN2psckNVeE55M2N0eV9ycTRkcWRCc0VvYkNydXhHZ3pKS0ROZWE4bS12ZDRGZVczQ0pFcHNQTjJ2MlhFOWhDcHVCSmFLemJOenfSAcsBQVVfeXFMT2dwU3VEU2xEMmpDa1F5a21EaVBpdkJLYlUwYkdENzRnMEZXTUdsaTgyS2V0ZGUwSURza21KX1RPblotU2l5TWpnRzRMUlktV2FWaEExQzJuSDBKalFRc2swcmFjT3N0bDRiOGJuN1lYSUVRV0JTYnh1ZVlEY3I5ZWZDX253cUM3elFRX2pIb3FveURpdloyNElXSko4SUZ5clN2QVJNZE82THJGZkplYWZZZDZ2eHhtYXdfVEdvYThFRy1fOEFiM1VyaW8?oc=5",
-      "publicada_em": "2026-08-25T12:17:00.000Z",
-      "resumo": "ANPD multa TikTok em mais de R$ 150 milhões por falhas na proteção de dados de adolescentes  Estadão"
-    },
-    {
       "titulo": "Oncoclínicas: CVM julga hoje se gestora terá de fazer compra de ações estimada em R$ 6 bilhões - Estadão",
       "fonte": "Google News Economia",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5VMkJTQzZmalM5SC15WEJubnRQdG9EbjRtcjF4Y0hyTFZaMG1iYlFkcC1qdjFESmNjY3RhWlVsMVEwamhaeUY5WkpQUWwxbm9UUGhqUUt5bEFzb1FrYW5UbzRjR1R1M3Noczk4ajY5Qjdzby0tMlpz0gF8QVVfeXFMTkRFcnR1ZzFvU05SdF9TSHAwNHpvdldoUGE5bHFVeW1YWVhoSG0wNnBFR1pIT3RIcGw3S2N4ejhiVjhuYTlpbWhhOFpjWVVyellPYjhRVW5wQnZHeDVPNUQxdnRSVXl6WTl6RExJUngwOE0yWWZ1Yy1HREZ3Qw?oc=5",
@@ -101,53 +150,11 @@
       "resumo": "Cardeal Pizzaballa visita comunidades cristãs na Cisjordânia e assegura que a Igreja não abandonará fiéis cercados por zona militar israelense em Taybeh."
     },
     {
-      "titulo": "Militar dos EUA é indiciado por pedir impeachment de Trump",
-      "fonte": "Gazeta do Povo - Mundo",
-      "url": "https://www.gazetadopovo.com.br/mundo/militar-eua-indiciado-pedir-impeachment-trump/",
-      "publicada_em": "2026-08-25T12:04:15.000Z",
-      "resumo": "Militar da Força Aérea criticou Trump em protesto no Capitólio e em entrevista à CNN. Leia na Gazeta do Povo"
-    },
-    {
-      "titulo": "Agência federal multa TikTok em R$ 153,7 milhões por falhas na proteção de menores",
-      "fonte": "Jovem Pan",
-      "url": "https://jovempan.com.br/brasil/agencia-federal-multa-tiktok/",
-      "publicada_em": "2026-08-25T12:04:05.000Z",
-      "resumo": "Em nota, a ANPD diz ter encontrado cinco violações à Lei Geral de Proteção de dados em duas formas de acesso à rede social; ByteDance tem 10 dias úteis para recorrer"
-    },
-    {
-      "titulo": "Leonardo Sakamoto: Brasil precisa do ‘Juiz Esperança’ para acolher quem ganha só R$ 70 mil - UOL Notícias",
-      "fonte": "Google News Brasil",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQa2paZWM5OXVzelQ2WGpHbDVrejRJTnpZOXNEcTF2V09oYVVUc2lDN2RpVHRoNjNTM1hXWmszQUFLaDJBUVRDM1FxbmVVYy1Tbk5BV2loSHJJdC16eWhmNDRRbmp2RE9tZjZ6VURaM001SjM5VkNnWXRhbXdzaUJrVkhLS2RTT1d4TFRBbkk3WmRic1ozd052ejlXSzdvT2R0ZjYzNEt0blh1SlZ2NkFISGdZU1hWX05ONVA4bUFUbmV5NThMS1EwbFFxaHhObktBdDFN?oc=5",
-      "publicada_em": "2026-08-25T12:00:17.000Z",
-      "resumo": "Leonardo Sakamoto: Brasil precisa do ‘Juiz Esperança’ para acolher quem ganha só R$ 70 mil  UOL Notícias"
-    },
-    {
-      "titulo": "A crise da Braskem tem muitas causas e várias consequências para a economia - O GLOBO",
-      "fonte": "Google News Economia",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQM2VSN2VTZzVnOEhhTS1GdlZIaXhWMTNpUFNkZ1IwdEtUWElOVmRhbHVOcU5maV94RXF1SURqcE5nUEFpMzVTZGFVTzBXVzVXUklQQmJ3TmY3SVZNaVdER0tTT2daQUhsOUROSGZJODRsZF9JNERpWV9ITy1nVXRvSTd2RkMwRC1MbGppb0tibFh2WUVhc3lwMF9ya0NXdUliWkZfa1l4UWw0czJBY2Fub2tDQjNRNUo4SVhDZy1XU0FSVkxBSzBfUGxFYnc5OU9KMDRQbWFR0gHkAUFVX3lxTE1vVG5LNkswR0FzOGk5QXN6N3VyVlNqdzZrMEJtbWZZYnA2WVpBamNpalBJMlgzbDJtVEtFYUhPOXJVWDRSdnJmbUt0NWNNSGd5c3gtNndPNkROMmI4YkR1NTRJenVHWExZcldmVmQzT3ZrcWR1akF0T2g0OE1paHlDZW1TVTRjYmhIdmViSkN0cllrY1hnOUx3c3Zlanc4MjRRdkpUU280M2FfMmdMVzJJdlBJMkVaMzg1aC1aYlQ2M196LWZaV2NpRndjaWlSNEZaOEVUVHlWT19wcTJFX3g2cElQcQ?oc=5",
-      "publicada_em": "2026-08-25T11:59:58.000Z",
-      "resumo": "A crise da Braskem tem muitas causas e várias consequências para a economia  O GLOBO"
-    },
-    {
       "titulo": "PF prende 25 em MG e ES por fraude de R$ 86 milhões no INSS",
       "fonte": "Gazeta do Povo - Brasil",
       "url": "https://www.gazetadopovo.com.br/brasil/pf-prende-25-mg-es-fraude-86-milhoes-inss/",
       "publicada_em": "2026-08-25T11:59:36.000Z",
       "resumo": "Grupo é suspeito de criar cadastros fictícios para obter benefícios do INSS, principalmente de idosos de baixa renda. Leia na Gazeta do Povo."
-    },
-    {
-      "titulo": "Salles critica PL e diz que André do Prado ‘não representa a direita’",
-      "fonte": "Jovem Pan",
-      "url": "https://jovempan.com.br/politica/salles-critica-pl-e-diz-que-andre-do-prado-nao-representa-a-direita/",
-      "publicada_em": "2026-08-25T11:44:21.000Z",
-      "resumo": "Em sabatina à Jovem Pan, candidato ao Senado afirmou que legenda tem bons nomes de direita, mas é comandada por Valdemar Costa Neto"
-    },
-    {
-      "titulo": "China ameaça retaliar se EUA ampliarem sanções ligadas ao Irã | Mundo - Valor Econômico",
-      "fonte": "Google News Mundo",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaDNLVWlNdmFsZjh3d2dpSGhEU1Z6NWJOSF9HZmhsbTcwVDZ2WG5wb2FFakNjSUZsSjFiRDdZSFR0RUI0ekdwXzd4X25YdFlMSWhBTEp6UFhBM29TOUs2dEtnRWpES3Q4Z3lRWlVVQzNXUGh3cGFOZUhKbm9wUmZ4N0V6eHVndXdETmE4X2ZaWDRuVWtpRkFhT2IwM2pkVjd1a0hVTWpKWjc3UWZWRWk2NWt3?oc=5",
-      "publicada_em": "2026-08-25T11:36:39.000Z",
-      "resumo": "China ameaça retaliar se EUA ampliarem sanções ligadas ao Irã | Mundo  Valor Econômico"
     },
     {
       "titulo": "Espaço histórico da cultura carioca e de resistência à ditadura, Teatro Axia Casa Grande completa 60 anos nesta terça-feira (25) - O GLOBO",
@@ -164,6 +171,13 @@
       "resumo": "Entenda as causas da crise na CVC, desde problemas contábeis até o impacto dos juros altos, e como a empresa tenta se recuperar com o modelo figital."
     },
     {
+      "titulo": "Eclipse lunar 'quase' total vai encobrir a Lua de quinta para sexta; fenômeno poderá ser visto em todo o Brasil - G1",
+      "fonte": "Google News Brasil",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeFdleTBrUUl1T2tyWGJJTGhxaEZGSGlJQXRSeVJJcVptVmlvQk9qcjJGR0tBMFlHcEk2RnF4UElGc2U1QWNOZVp4d1U2X2FxdnJpS3Ewb2dieEY0ZTUyTG01QVN3aUZOYXBqTExmXzNpMHNHUXpLak8weEpTWmhfM3lTQ1RmWTBh0gGXAUFVX3lxTFBibHZPVDNjZFNGa3FyanNDeDR1WDZiVTBfZ05iamFzM0F4bTQtTFdkV2dPNVpJODFhc2FNZE9xMzR3U2J3V3FLZUdyd244TERlMF9kUU5zTW1yUXA5QnlwRnctUDA2dURLV2lhTjlJM3U4LVFhSE9OWFlRbk5ab214LXpGdFlMbU1lMXBMa0NXRGs5TmVjRVk?oc=5",
+      "publicada_em": "2026-08-25T03:01:13.000Z",
+      "resumo": "Eclipse lunar 'quase' total vai encobrir a Lua de quinta para sexta; fenômeno poderá ser visto em todo o Brasil  G1"
+    },
+    {
       "titulo": "Caixa já investiu R$ 2,6 bi em tecnologia em 2026 - Estadão",
       "fonte": "Google News Tecnologia",
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOaEItUlp0TXNZMjgzWnhVNVBDMG1DbUlUNUtlWmtTNnF5TmNzZ1NuaWwtQ3NzcDBUdVhFNGJPV2paRkwyTlIyS2JKUDVBcWs4UkNTcHlJc0pXSDZUMzRmYlZVdHMwOVVXSHpkcGhiU25KQm0zU05fc0tVbXBJaWx2NDRnd1BUMXBfS2FtTTJTZmI1ZjBpQ0hLWjBvMURPNXp6UVHSAacBQVVfeXFMUG9peE5JWTlpelRobFFXQWV2bXRIMXpmb0Z6dDR4OWU3N3ZPUzgyQmp3eXhwR2NMVmZURmgzMjQ0c0xRNXBBck9QN0tFSF9UVEVZd2tVeHRjV1dKcHBqbzZ1bjkwRi1SQVAzYnF0eTNxT1lNSkYzVE4tQWgyV2hQS1UxeW9zT2M0UXZieVE1eE4xQzhsaDc2RU91TzB0aWl1azQtM191d0U?oc=5",
@@ -171,18 +185,11 @@
       "resumo": "Caixa já investiu R$ 2,6 bi em tecnologia em 2026  Estadão"
     },
     {
-      "titulo": "As duas “Faria Lima”: mercado precifica Lula, mas vê mais chances de ajuste com Flávio",
-      "fonte": "Gazeta do Povo - Economia",
-      "url": "https://www.gazetadopovo.com.br/eleicoes/2026/duas-faria-lima-mercado-precifica-lula-mas-ve-mais-chances-de-ajuste-com-flavio/",
-      "publicada_em": "2026-08-25T00:35:09.000Z",
-      "resumo": "Faria Lima já precifica reeleição e se protege de possível vitória de Lula, mas vê em Flávio maior chance de ajuste fiscal."
-    },
-    {
       "titulo": "Fifa define data do sorteio da Copa do Mundo Feminina de 2027 no Rio; confira - Estadão",
       "fonte": "Google News Mundo",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcXd3NWtfSzRzeVpfRTVlVW4wREI1eVZiVkU2ZTlJYkRpZFJSNlRUdUR5UVh2TFU1ZG1jUUZRb2YtRm9uZHZZMmd4QWJLcFFseTlva2UwZXFaYy1oWmo4ZmFqUmRORkx1WE1CZHdHQUxpX1NsMXVndE5HaU0wNVFSMWR6YktZc29qR2luaFdTM2s1SUNxN1hXbTROQVZYTDF4elJURkRWcHJVYTR2WDgyQjd5QW1zX2ZuRVZXdmRFN2YyQlpvaUHSAcsBQVVfeXFMTzdkdk1oeUZMUThxWHpBYW9teDdqbzFHRk15Wm1pRkVMOUJkRE9NMXViand1eDZVMFc3eHROR3d1UjhTQXY1RWhhSDNaTUtRcG04SHUyYjk5OGFMTUJDZW5hUHFhZUdWQmFib1NJVmZaeGJ2WkNQRGp6OU1VdGZFV3JDZUVhRm1rc2xqdmhNZVZGREZSZUZmX1loUjRwUnluUmJoTVQyNWM5U1p6VzE3NnpiSHRrNERvU3pEZDl4czlScEladGkzaHoxa28?oc=5",
       "publicada_em": "2026-08-25T00:35:00.000Z",
-      "resumo": "Fifa define data do sorteio da Copa do Mundo Feminina de 2027 no Rio; confira  Estadão\nSorteio da Copa do Mundo Feminina vai acontecer no dia 11 de dezembro  Terra\nEx-Botafogo, Davide Ancelotti recebe elogio de campeão do mundo pela França: 'Treinador muito culto'  O GLOBO"
+      "resumo": "Fifa define data do sorteio da Copa do Mundo Feminina de 2027 no Rio; confira  Estadão\nSorteio da Copa do Mundo Feminina vai acontecer no dia 11 de dezembro  Terra\nEx-Botafogo, Davide Ancelotti recebe elogio de campeão do mundo pela França: 'Treinador muito culto'  Extra online"
     },
     {
       "titulo": "‘Reconhecer quem empreende deveria ser parte da cultura nacional’, diz CEO da Abril no Prêmio TOP30 - VEJA",
@@ -213,13 +220,6 @@
       "resumo": "Marca de sorvetes Häagen-Dazs sai do Brasil após quase 30 anos  CNN Brasil"
     },
     {
-      "titulo": "Lito Sousa: o que diz a ciência sobre a doença de Creutzfeldt-Jakob - CNN Brasil",
-      "fonte": "Google News Ciência",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUG5fa0JOQzcxVlVONHVtdXZBaXVZLTNlOC1JTXlSb21XQkpDemxFSngyUTNKOGtMc3QtUjRvb1BuV3NDQWpiWjdobHB0OU5sZFc0aU5KQ0xiSUdSYi1fMUVzMUhJTkJNOXZzRzRLc3BqUWhzNVhYVGs2VTJxaUtyZUdvM2RnN2lUdnNmaTJ0WWJFbnFmNTRMNndzcWJscnowOXhPUjhlUQ?oc=5",
-      "publicada_em": "2026-08-24T18:36:31.000Z",
-      "resumo": "Lito Sousa: o que diz a ciência sobre a doença de Creutzfeldt-Jakob  CNN Brasil"
-    },
-    {
       "titulo": "Sensação de cócegas pode ser igual em diferentes culturas - 24/08/2026 - Ciência - Folha de S.Paulo",
       "fonte": "Google News Cultura",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMnRoQUF3OU45MDVSRlExSlVIUlhLMExHc2NCSnl4LThKOVBvRkdvUWNoMTB3TDZ5RDFKUUpJaWx1NlVYb3pENXIwZFBjVExBVUdJd1FDZ2haX01XS1NRM0VyazM1Qk0zX3FNaDkwWDZsNnlLb2RieGMwekowTWYtOW45cGpuWWJuR2JIa0Jqb0tUc2RQOWdIUWJKM29EYTZqa3NUYmRmWGw4U0thdFE?oc=5",
@@ -241,13 +241,6 @@
       "resumo": "Candidato aponta fragmentação da direita como estratégia da esquerda no Paraná. Leia na Gazeta do Povo."
     },
     {
-      "titulo": "Häagen-Dazs deixa o Brasil após quase 30 anos - Folha de S.Paulo",
-      "fonte": "Google News Brasil",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRzV6dmQtYXVCRUlhcjc1SURhV2VBUW84cXBNeWlBVk53SlFTT185YVRSNWFfNndHM2loQmlwbnJNcm5SS3A3aXNHSE01STBZUDNPb1RlNkNicG9zVGZqb1p0eEo1ZldQTUJoZlY0TXhackxVMVp1bjV5Njd2T0doT2pEbW1SZVlSTktCcFVzOThYNzU4bHdDTWNzVFVxZw?oc=5",
-      "publicada_em": "2026-08-24T13:57:00.000Z",
-      "resumo": "Häagen-Dazs deixa o Brasil após quase 30 anos  Folha de S.Paulo"
-    },
-    {
       "titulo": "Tarcísio encerra mandato com piora gradativa nas contas e aponta investimento maior em PPPs - Folha de S.Paulo",
       "fonte": "Google News Economia",
       "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPcEtnY3JUZk1mdWoxaXZ6ZS1yeHYtYmdmckRqNkx4QlRMeVZtOUFTMjVkOEFvbkk4ZExUNlV3TEllVzdhNk1YM2xfTWxjYWVUeUVOTmNyMjFhempKb3V0SlJZWXpUMThrWXB2Y21hTTNONGhQemFpOGVNMEZoZDRyZHRYRE5sdHZiaklLbHpieDFMZ2J3S1QwaTRRYnQzNThURTZ1eGY2cE5mM2pUWldMeHRVOUpxSmktZ1FvWFdybC04UVkxRjQ2dU5Ydl96ZDJwS0NhVVpMM1VTSkk?oc=5",
@@ -267,6 +260,34 @@
       "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPZWRaS1o0RGhxSDc4MHg4SkM4MFo5VDViWHlIWDJ1MmZCaldLanVyQlV5RHZVZmhuTmtTNzNzOFRBT0tIRTFGQUN3cHN2Q3NDbFhvM19OWFFLMHlOeXVVNkd6RHN2d2pLbmJFNHlJUzFpcldwcXdoNi1FYWxOcm1keXlwUFZzTmhxSG5nRVY5TW5NcE15UzE2YzhtbXNkYVlRS1B0T295RnNuaVZuallrMm16UXJKNmZmLTZEMU0tcTNDekdPSVkzSWpkWklZdHFzbmZUOG00b2Q2S2hlR0F1ZUFqU1lzeFhUUHBtUXg0Qk4tOHNv0gGDAkFVX3lxTE04NEJGU00xRGZKNkEtMXJCZkpaNVk3SndXRUcybmpQOUJrQ3cxYXR4NEl0bC10MnZlUzd6ZTRvZFE4Zlc0QUpLbGVlRlFZOFA4Y21EVmRablVNSXBNRzZ3RVdncFlMa0pLWGtJZFVtZkZpZm45R2FKU0toMFpreDFNR3lhY0FJSV9HY055b2l6a1IwQ183ODhsYVlmcDNyU2Q2c1prb0V1b0JBeFJkRGFzdTJVaXF0ZkpYYXAwcWUzLXVCWklJZ1BJZDdWdHNUNmI5bzVmZHVYNnk1eXdab29Dck5zeGYzdV9WdHF1dUV2R3A5bFFUMFZDOHNmWVF3NF9jTXc?oc=5",
       "publicada_em": "2026-08-23T07:02:03.000Z",
       "resumo": "IA pode estar freando salários antes de cortar empregos; veja profissões mais expostas e rankings  G1"
+    },
+    {
+      "titulo": "As 10 Melhores Universidades do Mundo, Segundo o ARWU - Forbes Brasil",
+      "fonte": "Google News Mundo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWTluWjUxZUV3YWprSnA1eGFWdExLNjJ3QVVMamU0TGJQSHRGZVhwU2Q5cVFMazdrWmNvQlQwZ0lpclNSWGNONS01d3BtYWdVZ1M2VDVfNzNqRGhCVUw0VmpMZ19MM194T01ocDJGMDN4OUZKUjNkYVN2TzV2ZnllT1EwZFd3VzVrNElIZ0MwbVM5YVBsUEs0?oc=5",
+      "publicada_em": "2026-08-22T17:29:07.000Z",
+      "resumo": "As 10 Melhores Universidades do Mundo, Segundo o ARWU  Forbes Brasil"
+    },
+    {
+      "titulo": "They survived 9/11; 25 years later, their bonds remain unbroken",
+      "fonte": "Ars Techcnica - Cultura",
+      "url": "https://arstechnica.com/culture/2026/08/new-9-11-documentary-finds-hope-in-the-horror/",
+      "publicada_em": "2026-08-20T21:25:25.000Z",
+      "resumo": "Survivors reconnect with those who saved them in National Geographic's 9/11: Reunited."
+    },
+    {
+      "titulo": "A fantastical journey unfolds in gorgeous Wildwood trailer",
+      "fonte": "Ars Techcnica - Cultura",
+      "url": "https://arstechnica.com/culture/2026/08/a-fantastical-journey-unfolds-in-gorgeous-wildwood-trailer/",
+      "publicada_em": "2026-08-19T17:06:06.000Z",
+      "resumo": "\"I will tear apart this forest and bring back what it took from me.\""
+    },
+    {
+      "titulo": "Teenage Sex and Death at Camp Miasma takes pains to deliver a slasher fan’s dream",
+      "fonte": "Ars Techcnica - Cultura",
+      "url": "https://arstechnica.com/culture/2026/08/teenage-sex-and-death-at-camp-miasma-takes-pains-to-deliver-a-slasher-fans-dream/",
+      "publicada_em": "2026-08-18T15:36:47.000Z",
+      "resumo": "Matte paintings—not CGI—warp a world designed to hit a nerve for slasher fans."
     },
     {
       "titulo": "Flávio diz que recusará segurança da PF por não confiar na direção da corporação",
