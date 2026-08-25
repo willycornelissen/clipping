@@ -28,6 +28,7 @@ export function validarFontes(texto) {
       max_noticias: f.max_noticias ?? 5,
       ativo: f.ativo ?? true
     }
+    if (f.assunto) fonte.assunto = f.assunto
     if (f.tipo === 'html') {
       const sel = f.seletores
       if (!sel?.item || !sel?.titulo || !sel?.link) {

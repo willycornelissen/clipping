@@ -20,9 +20,15 @@ Fonte RSS (preferível — quase todo site de notícias tem):
     nome: G1              # nome exibido no site
     tipo: rss
     url: https://g1.globo.com/rss/g1/
+    assunto: brasil       # assunto do site (opcional)
     max_noticias: 5       # opcional (padrão: 5)
     ativo: true           # opcional (padrão: true)
 ```
+
+O `assunto` agrupa as notícias nos botões abaixo do menu principal. Valores
+aceitos: `brasil`, `mundo`, `esporte`, `tecnologia`, `cultura` e `ciencia`.
+Fonte sem assunto (ou com valor inválido) aparece apenas em "Todas", na seção
+"Geral".
 
 Fonte sem feed (scraping): além dos campos acima, use `tipo: html` e declare
 seletores CSS. Para descobri-los: abra a página no navegador → F12 (DevTools) →
@@ -37,6 +43,7 @@ botão de inspecionar elemento → clique numa notícia e identifique:
     nome: Portal Exemplo
     tipo: html
     url: https://exemplo.com.br/noticias
+    assunto: tecnologia
     seletores:
       item: "article.noticia"
       titulo: "h2 a"

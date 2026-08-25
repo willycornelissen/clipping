@@ -10,10 +10,18 @@ sources:
 `
 
 describe('validarFontes', () => {
-  it('aplica defaults: max_noticias 5 e ativo true', () => {
+  it('aplica defaults: max_noticias 5, ativo true e assunto ausente', () => {
     const [fonte] = validarFontes(yamlBasico)
     expect(fonte.max_noticias).toBe(5)
     expect(fonte.ativo).toBe(true)
+    expect(fonte.assunto).toBeUndefined()
+  })
+
+  it('repassa o campo assunto quando presente', () => {
+    const yaml = yamlBasico.replace('url: https://g1.globo.com/rss/g1/', `url: https://g1.globo.com/rss/g1/
+    assunto: mundo`)
+    const [fonte] = validarFontes(yaml)
+    expect(fonte.assunto).toBe('mundo')
   })
 
   it('rejeita tipo que não seja rss nem html', () => {

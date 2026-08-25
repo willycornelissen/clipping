@@ -4,59 +4,89 @@ sources:
     tipo: rss
     url: https://news.google.com/rss/search?q=Brasil&hl=pt-BR&gl=BR&ceid=BR:pt-419
     max_noticias: 5
+    assunto: brasil
     ativo: true
   - id: google-news-mundo
     nome: Google News Mundo
     tipo: rss
     url: https://news.google.com/rss/search?q=mundo&hl=pt-BR&gl=BR&ceid=BR:pt-419
     max_noticias: 3
+    assunto: mundo
+    ativo: true
+  - id: google-news-esporte
+    nome: Google News Esporte
+    tipo: rss
+    url: https://news.google.com/rss/search?q=esporte&hl=pt-BR&gl=BR&ceid=BR:pt-419
+    max_noticias: 3
+    assunto: esporte
     ativo: true
   - id: google-news-tecnologia
     nome: Google News Tecnologia
     tipo: rss
     url: https://news.google.com/rss/search?q=tecnologia&hl=pt-BR&gl=BR&ceid=BR:pt-419
     max_noticias: 3
+    assunto: tecnologia
+    ativo: true
+  - id: google-news-cultura
+    nome: Google News Cultura
+    tipo: rss
+    url: https://news.google.com/rss/search?q=cultura&hl=pt-BR&gl=BR&ceid=BR:pt-419
+    max_noticias: 3
+    assunto: cultura
+    ativo: true
+  - id: google-news-ciencia
+    nome: Google News Ciência
+    tipo: rss
+    url: https://news.google.com/rss/search?q=ci%C3%AAncia&hl=pt-BR&gl=BR&ceid=BR:pt-419
+    max_noticias: 3
+    assunto: ciencia
     ativo: true
   - id: google-news-economia
     nome: Google News Economia
     tipo: rss
     url: https://news.google.com/rss/search?q=economia&hl=pt-BR&gl=BR&ceid=BR:pt-419
     max_noticias: 3
+    assunto: brasil
     ativo: true
   - id: jovem-pan
     nome: Jovem Pan
     tipo: rss
     url: https://jovempan.com.br/feed/
     max_noticias: 5
+    assunto: brasil
     ativo: true
   - id: gazeta-brasil
     nome: Gazeta do Povo - Brasil
     tipo: rss
     url: https://www.gazetadopovo.com.br/feed/rss/brasil.xml
     max_noticias: 4
+    assunto: brasil
     ativo: true
   - id: gazeta-politica
     nome: Gazeta do Povo - Política
     tipo: rss
     url: https://www.gazetadopovo.com.br/feed/rss/politica.xml
     max_noticias: 3
+    assunto: brasil
     ativo: true
   - id: gazeta-economia
     nome: Gazeta do Povo - Economia
     tipo: rss
     url: https://www.gazetadopovo.com.br/feed/rss/economia.xml
     max_noticias: 3
+    assunto: brasil
     ativo: true
   - id: gazeta-tecnologia
     nome: Gazeta do Povo - Tecnologia
     tipo: rss
     url: https://www.gazetadopovo.com.br/feed/rss/tecnologia.xml
     max_noticias: 3
+    assunto: tecnologia
     ativo: true
   - id: gazeta-mundo
     nome: Gazeta do Povo - Mundo
     tipo: rss
     url: https://www.gazetadopovo.com.br/feed/rss/mundo.xml
     max_noticias: 3
+    assunto: mundo
     ativo: true
-  
