@@ -1,14 +1,18 @@
 import { Link, Route, Routes, useSearchParams } from 'react-router-dom'
+import { useState } from 'react'
 import { RestaurarRota } from './components/RestaurarRota.jsx'
 import { PaginaEdicaoAtual } from './pages/PaginaEdicaoAtual.jsx'
 import { PaginaEdicao } from './pages/PaginaEdicao.jsx'
 import { PaginaArquivo } from './pages/PaginaArquivo.jsx'
 import { PaginaSobre } from './pages/PaginaSobre.jsx'
 import { ASSUNTOS } from './fontes.js'
+import { EdicaoContext } from './EdicaoContext.js'
+import { formatarData } from './formatar.js'
 
 export default function App() {
   const [searchParams, setSearchParams] = useSearchParams()
   const assuntoSelecionado = searchParams.get('assunto')
+  const [dataEdicao, setDataEdicao] = useState(null)
 
   const definirAssunto = (assuntoId) => {
     const params = new URLSearchParams(searchParams)
@@ -21,36 +25,39 @@ export default function App() {
   }
 
   return (
-    <div className="container">
-      <header className="site">
-        <h1>
-          <Link to="/">Diário da Capital</Link>
-        </h1>
-        <nav aria-label="Navegação principal">
-          <Link to="/">Início</Link>
-          <Link to="/sobre">Sobre</Link>
-          <Link to="/arquivo">Arquivo</Link>
-          <div className="assuntos-filtro" role="group" aria-label="Filtrar por assunto">
-            {ASSUNTOS.map(({ id, nome }) => (
-              <button
-                key={id}
-                className={`assunto-btn ${assuntoSelecionado === id ? 'ativa' : ''}`}
-                onClick={() => definirAssunto(id)}
-                aria-pressed={assuntoSelecionado === id}
-              >
-                {nome}
-              </button>
-            ))}
-          </div>
-        </nav>
-      </header>
-      <RestaurarRota />
-      <Routes>
-        <Route path="/" element={<PaginaEdicaoAtual />} />
-        <Route path="/sobre" element={<PaginaSobre />} />
-        <Route path="/arquivo" element={<PaginaArquivo />} />
-        <Route path="/edicao/:id" element={<PaginaEdicao />} />
-      </Routes>
-    </div>
+    <EdicaoContext.Provider value={{ dataEdicao, setDataEdicao }}>
+      <div className="container">
+        <header className="site">
+          <h1>
+            <Link to="/">Diário da Capital</Link>
+          </h1>
+          {dataEdicao && <p className="data-edicao">Edição de {formatarData(dataEdicao)}</p>}
+          <nav aria-label="Navegação principal">
+            <Link to="/">Início</Link>
+            <Link to="/sobre">Sobre</Link>
+            <Link to="/arquivo">Arquivo</Link>
+            <div className="assuntos-filtro" role="group" aria-label="Filtrar por assunto">
+              {ASSUNTOS.map(({ id, nome }) => (
+                <button
+                  key={id}
+                  className={`assunto-btn ${assuntoSelecionado === id ? 'ativa' : ''}`}
+                  onClick={() => definirAssunto(id)}
+                  aria-pressed={assuntoSelecionado === id}
+                >
+                  {nome}
+                </button>
+              ))}
+            </div>
+          </nav>
+        </header>
+        <RestaurarRota />
+        <Routes>
+          <Route path="/" element={<PaginaEdicaoAtual />} />
+          <Route path="/sobre" element={<PaginaSobre />} />
+          <Route path="/arquivo" element={<PaginaArquivo />} />
+          <Route path="/edicao/:id" element={<PaginaEdicao />} />
+        </Routes>
+      </div>
+    </EdicaoContext.Provider>
   )
 }

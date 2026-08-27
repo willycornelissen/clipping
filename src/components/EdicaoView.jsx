@@ -1,12 +1,18 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { Noticia } from './Noticia.jsx'
-import { formatarData } from '../formatar.js'
 import { ASSUNTOS, obterAssuntoDaNoticia } from '../fontes.js'
+import { useEdicaoContext } from '../EdicaoContext.js'
 
 export function EdicaoView({ edicao, fontes = [] }) {
   const [searchParams] = useSearchParams()
   const assuntoSelecionado = searchParams.get('assunto')
+  const { setDataEdicao } = useEdicaoContext()
+
+  useEffect(() => {
+    setDataEdicao(edicao.id)
+    return () => setDataEdicao(null)
+  }, [edicao.id, setDataEdicao])
 
   const grupos = useMemo(() => {
     const assuntoObj = ASSUNTOS.find((a) => a.id === assuntoSelecionado)
@@ -30,13 +36,10 @@ export function EdicaoView({ edicao, fontes = [] }) {
     return resultado
   }, [edicao, fontes, assuntoSelecionado])
 
-  const assuntoObj = ASSUNTOS.find((a) => a.id === assuntoSelecionado)
-  const tituloExibicao = assuntoObj ? assuntoObj.nome : 'Todas as notícias'
   const semNoticias = grupos.length === 0 || grupos.every(([, noticias]) => noticias.length === 0)
 
   return (
     <div>
-      <p className="data-edicao">Edição de {formatarData(edicao.id)}</p>
       {semNoticias ? (
         <p className="sem-noticias">Nenhuma notícia para este assunto.</p>
       ) : (
