@@ -4,6 +4,11 @@ export function PaginaSobre() {
   return (
     <article className="noticia">
       <h2 className="fonte">Sobre</h2>
+      <img
+        src="/sobre.jpg"
+        alt="Imagem sobre o projeto"
+        style={{ display: 'block', margin: '1rem auto', maxWidth: '100%' }}
+      />
       <p>
 A Cidade da Residência, habitualmente tratada como a Capital do país onde Castália está inserida, funciona como a antítese geográfica, política e
 filosófica da província pedagógica de Castália.
