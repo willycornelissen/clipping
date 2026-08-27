@@ -93,7 +93,7 @@ sources:
   - id: itatiaia
     nome: Itatiaia
     tipo: rss
-    url: https://www.itatiaia.com.br/ultimas-noticias/rss
+    url: https://www.itatiaia.com.br/feed/
     max_noticias: 4
     assunto: bh
     ativo: false
