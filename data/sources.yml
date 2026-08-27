@@ -1,106 +1,71 @@
 sources:
-  - id: google-news-brasil
-    nome: Google News Brasil
+  - id: bbc-brasil
+    nome: BBC News Brasil
     tipo: rss
-    url: https://news.google.com/rss/search?q=Brasil&hl=pt-BR&gl=BR&ceid=BR:pt-419
+    url: https://feeds.bbci.co.uk/portuguese/rss.xml
     max_noticias: 5
     assunto: brasil
     ativo: true
-  - id: google-news-mundo
-    nome: Google News Mundo
+  - id: agencia-brasil-geral
+    nome: Agência Brasil - Últimas Notícias
     tipo: rss
-    url: https://news.google.com/rss/search?q=mundo&hl=pt-BR&gl=BR&ceid=BR:pt-419
+    url: https://agenciabrasil.ebc.com.br/rss/ultimasnoticias/feed.xml
+    max_noticias: 5
+    assunto: brasil
+    ativo: true
+  - id: agencia-brasil-internacional
+    nome: Agência Brasil - Internacional
+    tipo: rss
+    url: https://agenciabrasil.ebc.com.br/rss/internacional/feed.xml
+    max_noticias: 4
+    assunto: mundo
+    ativo: true
+  - id: dw-brasil
+    nome: Deutsche Welle Brasil
+    tipo: rss
+    url: https://rss.dw.com/rdf/rss-br-all
+    max_noticias: 4
+    assunto: mundo
+    ativo: true
+  - id: rfi-brasil
+    nome: RFI Brasil
+    tipo: rss
+    url: https://www.rfi.fr/br/rss
     max_noticias: 3
     assunto: mundo
     ativo: true
-  - id: google-news-esporte
-    nome: Google News Esporte
+  - id: espn-brasil
+    nome: ESPN Brasil
     tipo: rss
-    url: https://news.google.com/rss/search?q=esporte&hl=pt-BR&gl=BR&ceid=BR:pt-419
-    max_noticias: 3
+    url: https://www.espn.com.br/rss
+    max_noticias: 5
     assunto: esporte
     ativo: true
-  - id: google-news-tecnologia
-    nome: Google News Tecnologia
+  - id: agencia-brasil-cultura
+    nome: Agência Brasil - Cultura
     tipo: rss
-    url: https://news.google.com/rss/search?q=tecnologia&hl=pt-BR&gl=BR&ceid=BR:pt-419
-    max_noticias: 3
-    assunto: tecnologia
-    ativo: true
-  - id: google-news-cultura
-    nome: Google News Cultura
-    tipo: rss
-    url: https://news.google.com/rss/search?q=cultura&hl=pt-BR&gl=BR&ceid=BR:pt-419
-    max_noticias: 3
+    url: https://agenciabrasil.ebc.com.br/rss/cultura/feed.xml
+    max_noticias: 4
     assunto: cultura
     ativo: true
-  - id: google-news-ciencia
-    nome: Google News Ciência
+  - id: fapesp
+    nome: Agência FAPESP
     tipo: rss
-    url: https://news.google.com/rss/search?q=ci%C3%AAncia&hl=pt-BR&gl=BR&ceid=BR:pt-419
-    max_noticias: 3
+    url: https://agencia.fapesp.br/rss/
+    max_noticias: 4
     assunto: ciencia
     ativo: true
-  - id: google-news-economia
-    nome: Google News Economia
+  - id: canaltech
+    nome: Canaltech
     tipo: rss
-    url: https://news.google.com/rss/search?q=economia&hl=pt-BR&gl=BR&ceid=BR:pt-419
-    max_noticias: 3
-    assunto: brasil
-    ativo: true
-  - id: jovem-pan
-    nome: Jovem Pan
-    tipo: rss
-    url: https://jovempan.com.br/feed/
-    max_noticias: 5
-    assunto: brasil
-    ativo: true
-  - id: gazeta-brasil
-    nome: Gazeta do Povo - Brasil
-    tipo: rss
-    url: https://www.gazetadopovo.com.br/feed/rss/brasil.xml
+    url: https://canaltech.com.br/rss/
     max_noticias: 4
-    assunto: brasil
-    ativo: true
-  - id: gazeta-politica
-    nome: Gazeta do Povo - Política
-    tipo: rss
-    url: https://www.gazetadopovo.com.br/feed/rss/politica.xml
-    max_noticias: 3
-    assunto: brasil
-    ativo: true
-  - id: gazeta-economia
-    nome: Gazeta do Povo - Economia
-    tipo: rss
-    url: https://www.gazetadopovo.com.br/feed/rss/economia.xml
-    max_noticias: 3
-    assunto: brasil
-    ativo: true
-  - id: gazeta-tecnologia
-    nome: Gazeta do Povo - Tecnologia
-    tipo: rss
-    url: https://www.gazetadopovo.com.br/feed/rss/tecnologia.xml
-    max_noticias: 3
     assunto: tecnologia
     ativo: true
-  - id: gazeta-mundo
-    nome: Gazeta do Povo - Mundo
+  - id: olhar-digital
+    nome: Olhar Digital
     tipo: rss
-    url: https://www.gazetadopovo.com.br/feed/rss/mundo.xml
+    url: https://olhardigital.com.br/feed/
     max_noticias: 3
-    assunto: mundo
-    ativo: true
-  - id: deutch-welle
-    nome: Deutch Welle - Mundo
-    tipo: rss
-    url: https://dw.com/rss/
-    max_noticias: 3
-    assunto: mundo
-    ativo: true
-  - id: arstechnica-cultura
-    nome: Ars Techcnica - Cultura
-    tipo: rss
-    url: https://arstechnica.com/culture/rss
-    max_noticias: 3
-    assunto: cultura
+    assunto: tecnologia
     ativo: true
