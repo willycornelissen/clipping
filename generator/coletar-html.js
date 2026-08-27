@@ -22,7 +22,8 @@ export async function coletarHtml(fonte, fetchFn = fetch) {
       url,
       publicada_em: null,
       conteudo: $item.text().replace(/\s+/g, ' ').trim(),
-      fonte: fonte.nome
+      fonte: fonte.nome,
+      assunto: fonte.assunto ?? null
     })
   })
   return itens

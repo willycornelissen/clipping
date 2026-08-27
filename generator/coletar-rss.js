@@ -18,7 +18,8 @@ export async function coletarRss(fonte, fetchFn = fetch) {
       url: item.link?.trim() ?? '',
       publicada_em: item.isoDate ?? null,
       conteudo: (item.contentSnippet || item.content || '').trim(),
-      fonte: fonte.nome
+      fonte: fonte.nome,
+      assunto: fonte.assunto ?? null
     }))
     .filter((n) => n.titulo && n.url)
 }

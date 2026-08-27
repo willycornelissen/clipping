@@ -26,6 +26,9 @@ export async function carregarFontes() {
 }
 
 export function obterAssuntoDaNoticia(noticia, fontes) {
+  if (noticia.assunto) {
+    return ASSUNTOS.find((a) => a.id === noticia.assunto) ?? null
+  }
   const fonte = fontes.find((f) => f.nome === noticia.fonte)
   return ASSUNTOS.find((a) => a.id === fonte?.assunto) ?? null
 }
