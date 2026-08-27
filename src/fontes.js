@@ -1,14 +1,14 @@
 import { base } from './api.js'
 
 export const ASSUNTOS = [
-  { id: 'brasil', nome: 'Brasil' },
   { id: 'mundo', nome: 'Mundo' },
+  { id: 'brasil', nome: 'Brasil' },
+  { id: 'mg', nome: 'MG' },
+  { id: 'bh', nome: 'BH' },
   { id: 'esporte', nome: 'Esporte' },
   { id: 'tecnologia', nome: 'Tecnologia' },
   { id: 'cultura', nome: 'Cultura' },
-  { id: 'ciencia', nome: 'Ciência' },
-  { id: 'mg', nome: 'MG' },
-  { id: 'bh', nome: 'BH' }
+  { id: 'ciencia', nome: 'Ciência' }
 ]
 
 let fontesCache = null
