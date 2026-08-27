@@ -5,7 +5,6 @@ export const ASSUNTOS = [
   { id: 'brasil', nome: 'Brasil' },
   { id: 'mg', nome: 'MG' },
   { id: 'bh', nome: 'BH' },
-  { id: 'esporte', nome: 'Esporte' },
   { id: 'tecnologia', nome: 'Tecnologia' },
   { id: 'cultura', nome: 'Cultura' },
   { id: 'ciencia', nome: 'Ciência' },
