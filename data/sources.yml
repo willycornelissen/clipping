@@ -139,3 +139,10 @@ sources:
     max_noticias: 5
     assunto: youtube
     ativo: true
+  - id: revista-timeline
+    nome: Revista Timeline
+    tipo: rss
+    url: https://www.revistatimeline.com/feed
+    max_noticias: 5
+    assunto: revistas
+    ativo: true

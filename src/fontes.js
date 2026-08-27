@@ -10,7 +10,8 @@ export const ASSUNTOS = [
   { id: 'cultura', nome: 'Cultura' },
   { id: 'ciencia', nome: 'Ciência' },
   { id: 'blogs', nome: 'Blogs' },
-  { id: 'youtube', nome: 'YouTube' }
+  { id: 'youtube', nome: 'YouTube' },
+  { id: 'revistas', nome: 'Revistas' }
 ]
 
 let fontesCache = null
