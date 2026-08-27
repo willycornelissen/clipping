@@ -6,7 +6,9 @@ export const ASSUNTOS = [
   { id: 'esporte', nome: 'Esporte' },
   { id: 'tecnologia', nome: 'Tecnologia' },
   { id: 'cultura', nome: 'Cultura' },
-  { id: 'ciencia', nome: 'Ciência' }
+  { id: 'ciencia', nome: 'Ciência' },
+  { id: 'mg', nome: 'MG' },
+  { id: 'bh', nome: 'BH' }
 ]
 
 let fontesCache = null

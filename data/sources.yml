@@ -69,3 +69,31 @@ sources:
     max_noticias: 3
     assunto: tecnologia
     ativo: true
+  - id: estado-de-minas
+    nome: Estado de Minas
+    tipo: rss
+    url: https://www.em.com.br/feed
+    max_noticias: 5
+    assunto: mg
+    ativo: true
+  - id: agencia-minas
+    nome: Agência Minas
+    tipo: rss
+    url: https://www.agenciaminas.mg.gov.br/noticias.rss
+    max_noticias: 4
+    assunto: mg
+    ativo: false
+  - id: bhaz
+    nome: BHaz
+    tipo: rss
+    url: https://bhaz.com.br/feed/
+    max_noticias: 5
+    assunto: bh
+    ativo: true
+  - id: itatiaia
+    nome: Itatiaia
+    tipo: rss
+    url: https://www.itatiaia.com.br/ultimas-noticias/rss
+    max_noticias: 4
+    assunto: bh
+    ativo: false
