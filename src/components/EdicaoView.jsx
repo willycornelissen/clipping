@@ -37,7 +37,6 @@ export function EdicaoView({ edicao, fontes = [] }) {
   return (
     <div>
       <p className="data-edicao">Edição de {formatarData(edicao.id)}</p>
-      <p className="assunto-filtro-ativa">Exibindo: <strong>{tituloExibicao}</strong></p>
       {semNoticias ? (
         <p className="sem-noticias">Nenhuma notícia para este assunto.</p>
       ) : (
