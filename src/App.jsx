@@ -31,13 +31,6 @@ export default function App() {
           <Link to="/sobre">Sobre</Link>
           <Link to="/arquivo">Arquivo</Link>
           <div className="assuntos-filtro" role="group" aria-label="Filtrar por assunto">
-            <button
-              className={`assunto-btn ${!assuntoSelecionado ? 'ativa' : ''}`}
-              onClick={() => definirAssunto(null)}
-              aria-pressed={!assuntoSelecionado}
-            >
-              Todas
-            </button>
             {ASSUNTOS.map(({ id, nome }) => (
               <button
                 key={id}
