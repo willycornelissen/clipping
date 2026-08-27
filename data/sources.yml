@@ -111,3 +111,31 @@ sources:
     max_noticias: 5
     assunto: blogs
     ativo: false
+  - id: leandro-ruschel-substack
+    nome: Leandro Ruschel
+    tipo: rss
+    url: https://leandroruschel.substack.com/feed
+    max_noticias: 5
+    assunto: blogs
+    ativo: true
+  - id: youtube-caio-coppolla
+    nome: Caio Coppolla
+    tipo: rss
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCqkoOgSof-lNcv8OzRPQj6w
+    max_noticias: 5
+    assunto: youtube
+    ativo: true
+  - id: youtube-teatualizei
+    nome: Bárbara Destefani
+    tipo: rss
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCXRIQok8uzYtg1TPwSqikVg
+    max_noticias: 5
+    assunto: youtube
+    ativo: true
+  - id: youtube-leandro-ruschel
+    nome: Leandro Ruschel (YouTube)
+    tipo: rss
+    url: https://www.youtube.com/feeds/videos.xml?channel_id=UCOpoJNOhFTGGShCiuqz3-iA
+    max_noticias: 5
+    assunto: youtube
+    ativo: true
