@@ -8,7 +8,8 @@ export const ASSUNTOS = [
   { id: 'esporte', nome: 'Esporte' },
   { id: 'tecnologia', nome: 'Tecnologia' },
   { id: 'cultura', nome: 'Cultura' },
-  { id: 'ciencia', nome: 'Ciência' }
+  { id: 'ciencia', nome: 'Ciência' },
+  { id: 'blogs', nome: 'Blogs' }
 ]
 
 let fontesCache = null

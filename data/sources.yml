@@ -97,3 +97,17 @@ sources:
     max_noticias: 4
     assunto: bh
     ativo: false
+  - id: brasil-paralelo
+    nome: Brasil Paralelo
+    tipo: rss
+    url: https://www.brasilparalelo.com.br/feed
+    max_noticias: 5
+    assunto: blogs
+    ativo: true
+  - id: brasil-paralelo-artigos
+    nome: Brasil Paralelo - Artigos
+    tipo: rss
+    url: https://www.brasilparalelo.com.br/artigos/feed
+    max_noticias: 5
+    assunto: blogs
+    ativo: false
