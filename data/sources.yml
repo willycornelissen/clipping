@@ -48,6 +48,13 @@ sources:
     max_noticias: 4
     assunto: ciencia
     ativo: true
+  - id: pesquisa-fapesp
+    nome: Revista Pesquisa FAPESP
+    tipo: rss
+    url: https://feeds.feedburner.com/RevistaPesquisaBrasil_port
+    max_noticias: 4
+    assunto: ciencia
+    ativo: true
   - id: canaltech
     nome: Canaltech
     tipo: rss
